@@ -1,0 +1,604 @@
+[
+  {
+    "id": 1,
+    "type": "email-1to1",
+    "name": "Email 1to1",
+    "contentName": "OME Forum 08/06/21 > Votre invitation à lOME Forum le 8 juin",
+    "phase": "Execution",
+    "date": {
+      "from": "01/06",
+      "to": "15/06"
+    },
+    "previous": [], 
+    "data": {
+      "projeto": "INSERE SITE",
+     "target": "25000",
+     "potentialTarget": 2000,
+     "percentOK": {
+       "label": "CTOR",
+       "value": 10
+     },
+     "analytics": [
+       {
+         "label": "Accepted",
+         "color": "#003f5c",
+         "value": 200
+       },
+       {
+        "label": "Refused",
+        "color": "#d45087",
+        "value": 10
+       },
+       {
+        "label": "Unsubscribed",
+        "color": "#ffa600",
+        "value": 5
+       },
+       {
+        "label": "Opened",
+        "color": "#665191",
+        "value": 500
+       },
+       {
+        "label": "Not Opened",
+        "color": "#a05195",
+        "value": 600
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff7c43",
+        "value": 485
+       },
+       {
+        "label": "Target Lost",
+        "color": "#f95d6a",
+        "value": 200
+       }
+     ]
+    }
+  },
+  
+  {
+    "id": 2,
+    "previous": [
+      { "stepId": 4, "count": 500, "label": "Opened" }
+    ],
+    "type": "automated-email",
+    "name": "Automated Email",
+    "contentName": "Echanges Franco Belges Connexion 26/05 > Vos informations de connexion : Échanges Franco Belges",
+    "phase": "Execution",
+    "date": {
+      "from": "10/06",
+      "to": "20/06"
+    },
+    "data": {
+      
+      "projeto": "PROJETO RE",
+     "target": 100,
+     "potentialTarget": 500,
+     "percentOK": {
+       "label": "CTOR",
+       "value": 40
+     },
+     "analytics": [
+      {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 40
+      },
+      {
+       "label": "Refused",
+       "color": "#d45087",
+       "value": 2
+      },
+      {
+       "label": "Unsubscribed",
+       "color": "#ffa600",
+       "value": 0
+      },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 48
+       },
+       {
+        "label": "Not Opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 3,
+    "previous": [
+      { "stepId": 2, "count": 40, "label": "Accepted" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "ELAB DRAFT",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 4,
+    "previous": [
+      { "stepId": 1, "count": 200, "label": "Accepted" }
+    ],
+    "type": "survey",
+    "name": "Survey",
+    "phase": "Execution",
+    "date": {
+      "from": "1/06",
+      "to": "20/06"
+    },
+    "data": {
+      
+      "projeto": "TOPOLOGIA",
+      "target": 150,
+      "potentialTarget": 200,
+      "percentOK": {
+         "label": "Submitted",
+         "value": 73
+       },
+      "analytics": [
+        {
+          "label": "Submitted",
+          "color": "#003f5c",
+          "value": 110
+        },
+        {
+          "label": "Not Submitted",
+          "color": "#58508d",
+          "value": 33
+        },
+        {
+          "label": "CSAT",
+          "color": "#bc5090",
+          "value": 7
+        },
+        {
+          "label": "NPS",
+          "color": "#ffa600",
+          "value": 0
+        }
+      ]
+     }
+  },
+  {
+    "id": 5,
+    "previous": [
+      { "stepId": 3, "count": 40, "label": "Accepted", "animated": true }
+    ],
+    "type": "call",
+    "name": "Call",
+    "phase": "Integration",
+    "date": {
+      "from": "10/06",
+      "to": "20/06"
+    },
+    "data": {
+      
+      "projeto": "SINOPTICO",
+      "target": 110,
+      "potentialTarget": 110,
+      "percentOK": {
+         "label": "Visited",
+         "value": 54
+       },
+      "analytics": [
+        {
+          "label": "Visited",
+          "color": "#003f5c",
+          "value": 60
+        },
+        {
+          "label": "Not Visited",
+          "color": "#ffa600",
+          "value": 50
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "previous": [
+      { "stepId": 3, "count": 6, "label": "Accepted" }
+    ],
+    "type": "event",
+    "name": "Event",
+    "phase": "Preparation",
+    "date": "30/06/2021",
+    "data": {
+      "projeto": "VALIDACAO DE DRAFT",
+      "target": 30,
+      "potentialTarget": 66,
+      "percentOK": {
+         "label": "Attended",
+         "value": 0
+       },
+     "analytics": [
+        {
+          "label": "Confirmed",
+          "color": "#58508d",
+          "value": 20
+        },
+        {
+          "label": "Cancelled",
+          "color": "#ffa600",
+          "value": 10
+        },
+        {
+          "label": "Not Attended",
+          "color": "#ff6361",
+          "value": 0
+        },
+        {
+          "label": "Attended",
+          "color": "#003f5c",
+          "value": 0
+        }
+     ]
+    }
+  },
+  {
+    "id": 7,
+    "previous": [
+      { "stepId": 6, "count": 40, "label": "Accepted" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "APROVACAO DE DRAFT",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 8,
+    "previous": [
+      { "stepId": 7, "count": 40, "label": "Accepted" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "CONSTRUCAO",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 9,
+    "previous": [
+      { "stepId": 8, "count": "nao", "label": "predecessor" },
+      { "stepId": 5, "count": 40, "label": "Accepted",  "animated": true },
+      { "stepId": 11, "count": "sim", "label": "LIB TX OK" },
+      
+      { "stepId": 12, "count": "sim", "label": "lib ok" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "IMP-TX",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 10,
+    "previous": [
+      { "stepId": 8, "count": "nao", "label": "predecessor na meta" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "INSERE SITE META",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 11,
+    "previous": [
+      { "stepId": 8, "count": "sim", "label": "predecessor na meta" },
+      { "stepId": 10, "count": "sim", "label": "site inserido" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "ATT. PEND. SITE PREDECESSOR",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 12,
+    "previous": [
+      { "stepId": 11, "count": "sim", "label": "site inserido" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "AGUARD. LIB TX",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  },
+  {
+    "id": 13,
+    "final": true,
+    "previous": [
+      { "stepId": 9, "count": "sim", "label": "ativacao site" }
+    ],
+    "type": "sms",
+    "name": "SMS",
+    "phase": "Execution",
+    "date": {
+      "from": "15/06",
+      "to": "30/06"
+    },
+    "data": {
+      
+      "projeto": "AGUARD. LIB TX",
+     "target": 30,
+     "potentialTarget": 40,
+     "percentOK": {
+        "label": "CTOR",
+        "value": 20
+      },
+     "analytics": [
+       {
+        "label": "Accepted",
+        "color": "#003f5c",
+        "value": 6
+       },
+       {
+        "label": "Opened",
+        "color": "#58508d",
+        "value": 14
+       },
+       {
+        "label": "Not opened",
+        "color": "#bc5090",
+        "value": 10
+       },
+       {
+        "label": "Bounced",
+        "color": "#ff6361",
+        "value": 0
+       }
+     ]
+    }
+  }
+]
